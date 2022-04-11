@@ -1,5 +1,6 @@
 package br.edu.ifpe.tads.pdm.pratica01;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +17,32 @@ import android.view.ViewGroup;
  */
 public class DetailFragment extends Fragment {
 
+    public interface FragmentListener{
+
+        void onInteraction(String msg);
+
+    }
+
+    private FragmentListener listener;
+
+    public void setText(String item) {
+
+        TextView view = getView().findViewById(R.id.detailsText);
+        view.setText(item);
+
+    }
+
+    @Override
+    public void onAttach(Context context) {
+
+        super.onAttach(context);
+
+        if(context instanceof FragmentListener) {
+            listener= (FragmentListener) context;
+        }else{
+            listener= null;
+        }
+    }
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
