@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    android:orientation="vertical">
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip"
+        android:text="Default Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"/>
+</LinearLayout>
