@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.edu.ifpe.tads.pdm.pratica_02">
+    package="br.edu.ifpe.tads.pdm.pratica01">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pratica02">
+        android:theme="@style/Theme.Pratica01">
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message">
+         <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"/>
+
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
