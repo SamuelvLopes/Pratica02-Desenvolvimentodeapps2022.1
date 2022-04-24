@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MainActivity"
-    >
-<EditText
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:id="@+id/edit_message"
-    android:hint="@string/edit_message"
-
-    />
-<Button
-
-    tools:layout_editor_absoluteX="parent"
-    tools:layout_editor_absoluteY="parent"
-    android:onClick="sendMessage"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/button_send"
-
-    />
-</androidx.appcompat.widget.LinearLayoutCompat>
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/listFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:name="br.edu.ifpe.tads.pdm.pratica_02.OverviewFragment" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/detailFragment"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:name="br.edu.ifpe.tads.pdm.pratica_02.DetailFragment" />
+</LinearLayout>

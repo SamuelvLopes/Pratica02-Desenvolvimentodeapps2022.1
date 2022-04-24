@@ -3,9 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/samu/AndroidStudioProjects/Pratica01/app/src/main/res/layout/activity_display_message.xml" value="0.1" />
-        <entry key="..\:/Users/samu/AndroidStudioProjects/Pratica01/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
-        <entry key="..\:/Users/samu/AndroidStudioProjects/Pratica01/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/p/mobile2/app/src/main/res/layout/activity_main.xml" value="0.9596774193548387" />
+        <entry key="..\:/p/mobile2/app/src/main/res/layout/fragment_detail.xml" value="0.10778985507246377" />
+        <entry key="..\:/p/mobile2/app/src/main/res/layout/fragment_overview.xml" value="0.10778985507246377" />
       </map>
     </option>
   </component>

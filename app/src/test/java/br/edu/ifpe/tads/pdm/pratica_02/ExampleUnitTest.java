@@ -1,4 +1,4 @@
-package br.edu.ifpe.tads.pdm.pratica01;
+package br.edu.ifpe.tads.pdm.pratica_02;
 
 import org.junit.Test;
 

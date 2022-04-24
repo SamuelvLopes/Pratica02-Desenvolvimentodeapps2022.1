@@ -1,4 +1,4 @@
-package br.edu.ifpe.tads.pdm.pratica01;
+package br.edu.ifpe.tads.pdm.pratica_02;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("br.edu.ifpe.tads.pdm.pratica01", appContext.getPackageName());
+        assertEquals("br.edu.ifpe.tads.pdm.pratica_02", appContext.getPackageName());
     }
 }
